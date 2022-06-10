@@ -14,7 +14,5 @@ jobs:
       run: sudo apt update && sudo apt install libcunit1-dev gcovr libsdl2-dev
     - name: 'Compile'
       run: |
-        mkdir Build
-        cd Build
-        cmake ../
+        cmake
         cmake --build .
