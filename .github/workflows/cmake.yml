@@ -1,0 +1,20 @@
+name: Cmake CI
+
+on:
+  push:
+    branches:
+      - master
+      - development
+jobs:
+  all_linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: 'Packages'
+      run: sudo apt update && sudo apt install libcunit1-dev gcovr libsdl2-dev
+    - name: 'Compile'
+      run: |
+        mkdir Build
+        cd Build
+        cmake ../
+        cmake --build .
