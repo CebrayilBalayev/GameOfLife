@@ -1,4 +1,14 @@
+/** \file neigh.c
+ * \brief this functions will help us to control the amount of cells in the board
+*/ 
 #include "neigh.h"
+
+/** This function helps ous to create a new matrix based of the amount of neighbors of previous board
+ * \param table is a pointer a matrix where the cells will be located
+ * \param size the size of tabel
+ * \param type this is type of game
+ * \param[out] neighbors the amount of neighbors
+*/
 
 int **matrixOfNeighbors(int **table,int size,int type){
 	int **neighbors = allocatedMatrix(size);
@@ -11,6 +21,13 @@ int **matrixOfNeighbors(int **table,int size,int type){
 	return neighbors;
 }
 
+/** This function is used when type of game is set clipped 
+ * \param renderer this is simple SDL_Renderer pointer
+ * \param row is used to handle the position of cell
+ * \param column is used to handle the position of cell 
+ * \param size the size of SDL_rect
+ * \param[out] nbNeigh the new position of cell
+*/
 int numberOfneighbors_clipped(int **table,int row,int column,int size){
 	int nbNeigh=0;
 
@@ -27,6 +44,13 @@ int numberOfneighbors_clipped(int **table,int row,int column,int size){
 	return nbNeigh;
 }
 
+/** This function is used when type of game is set circular 
+ * \param renderer this is simple SDL_Renderer pointer
+ * \param row is used to handle the position of cell
+ * \param column is used to handle the position of cell 
+ * \param size the size of SDL_rect
+ * \param[out] nbNeigh the new position of cell
+*/
 int numberOfneighbors_circular(int **table,int row,int column,int size){
 	int nbNeigh=0;
 
@@ -43,6 +67,10 @@ int numberOfneighbors_circular(int **table,int row,int column,int size){
 	return nbNeigh;
 }
 
+/** This function is used to check the "status" of cell if it is dead of alive
+ * \param b is status of cell within its structure 
+ * \return 1 or \return 0
+*/
 int isalive(int b){
 	if(b == 1)return 1;//alive
 	else if(b == 0)return 0;//dead

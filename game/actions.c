@@ -1,5 +1,16 @@
+/** \file actions.c
+ * \brief This is file where we placed the functions that are used to make some actions with our cells
+*/
+
 #include "actions.h"
 
+
+/** The function dostep is used to move our cells accordig to specified type of Game of Life clipped or circular
+ * \param table is a pointer a matrix where the cells will be located
+ * \param size the size of tabel
+ * \param type this is type of game
+ * 
+*/ 
 int **dostep(int **table,int size,int type){
 	int **neighborMatrix = matrixOfNeighbors(table,size,type);
 	int **returnArray = allocatedMatrix(size);

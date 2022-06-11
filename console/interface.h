@@ -1,3 +1,9 @@
+/** \file interface.h
+ * \brief The header file with the declaration of functions that will be used sdl interface 
+ * \see inteface.c
+*/
+
+
 #ifdef WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -10,6 +16,7 @@
 #include <unistd.h>
 
 // (SIZE/size) must be integer not double 
+/** \brief SIZE is used to define the size in pixels of Window */
 #define SIZE 1040 //1024 + 2*margin => margin = 8
 #define MARGIN 8
 

@@ -1,0 +1,21 @@
+digraph "game/table.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="game/table.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="header file with function to manipulate a board"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="game/neigh.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$neigh_8h.html",tooltip="this file contains the declarations of function that will help us to handle the amount of neighbors o..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="game/actions.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$actions_8h.html",tooltip="this file contains functions that is used to move our cells within the matrix"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="game/actions.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$actions_8c.html",tooltip="This is file where we placed the functions that are used to make some actions with our cells."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="This is the main file in our project."];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="tests.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8c.html",tooltip="This file holds all Cunits test that we created for our project."];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="game/neigh.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$neigh_8c.html",tooltip="this functions will help us to control the amount of cells in the board"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="game/table.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$table_8c.html",tooltip="this function the implementations of functions created in table.h"];
+}

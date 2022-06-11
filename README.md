@@ -54,3 +54,8 @@ and if you want to see the game itself write
 When program is running 
 - 1.you can press space button to pause the game or start the game if it is paused 
 - 2.you press the r button to restart the board,in case if cells do not change from one generation to the next
+
+### documentation
+For the documentation please you the link 
+https://balayev.alwaysdata.net/life/
+or you can find it directly in Dox folder by opening index.html file
