@@ -9,7 +9,7 @@ target_sources(${PROJECT_NAME} PRIVATE main.c)
 target_sources(tests PRIVATE tests.c)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2 SDL2main)
-target_link_libraries(tests PRIVATE cunit )
+target_link_libraries(tests PRIVATE cunit)
 
 target_link_libraries(tests PRIVATE game)
 target_link_libraries(tests PRIVATE console)
