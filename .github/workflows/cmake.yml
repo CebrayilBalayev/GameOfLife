@@ -20,6 +20,7 @@ jobs:
         cmake --build .
     - name: 'Testing'
       run: |
+        cd Build
         ls -a
         ./tests
         
