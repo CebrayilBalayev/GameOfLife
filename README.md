@@ -59,3 +59,11 @@ When program is running
 For the documentation please you the link 
 https://balayev.alwaysdata.net/life/
 or you can find it directly in Dox folder by opening index.html file
+
+#### Docker
+In this project we tried to use dockerfile.We tried our best , but attempt was unsuccessful.Because right now,
+for us it is hard to run a GUI application from docker container.We managed to build our project with docker file and run test inside a docker container by using exec.You can you our docker file by writing:
+1. docker build -t game.
+2. docker run exec -it [Container_ID] bash
+Then enter to the Build directory and run 
+3. /tests
