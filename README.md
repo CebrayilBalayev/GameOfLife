@@ -58,7 +58,6 @@ When program is running
 ### documentation
 For the documentation please you the link 
 https://balayev.alwaysdata.net/life/
-or you can find it directly in Dox folder by opening index.html file
 
 #### Docker
 In this project we tried to use dockerfile.We tried our best , but attempt was unsuccessful.Because right now,
