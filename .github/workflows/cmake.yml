@@ -18,3 +18,7 @@ jobs:
         cd Build
         cmake ../
         cmake --build .
+    - name: 'Testing'
+      run: |
+        ./tests
+        
